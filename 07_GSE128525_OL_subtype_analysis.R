@@ -190,10 +190,5 @@ for (cluster_name in names(markers_list)) {
   }
 }
 
-# ---
-# 6. SAVE PROCESSED OBJECT
-# ---
-
-saveRDS(oligos, file = file.path(output_dir, "processed_GSE128525_OL_subtypes.rds"))
 
 # --- END OF SCRIPT ---
