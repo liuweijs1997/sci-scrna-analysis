@@ -168,7 +168,7 @@ for (cluster_name in clusters) {
 
 ## 5A. Preparation: Integrate annotations and convert genes ##
 # Load the main object and transfer the new, detailed OL subtype annotations
-DRSCI <- readRDS(file.path(input_dir, "zebrafish_sci_integrated_annotated.rds"))
+DRSCI <- readRDS(file.path(input_dir, "integrated_annotated.rds"))
 Idents(DRSCI, cells = colnames(DROL)) <- Idents(DROL)
 
 # Subset to the cell types of interest for communication analysis
